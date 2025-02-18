@@ -2,7 +2,6 @@ package com.procesos.colas.presentation;
 
 import com.procesos.colas.Infrastructure.exception.EmailSendException;
 import com.procesos.colas.application.Dto.*;
-import com.procesos.colas.application.EmailService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
