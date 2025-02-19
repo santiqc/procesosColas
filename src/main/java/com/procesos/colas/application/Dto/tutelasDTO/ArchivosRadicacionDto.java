@@ -1,6 +1,6 @@
 package com.procesos.colas.application.Dto.tutelasDTO;
 
-import com.procesos.colas.domain.TutelaArchivo;
+import com.procesos.colas.domain.tutelas.TutelaArchivo;
 import lombok.*;
 
 import java.util.List;

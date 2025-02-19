@@ -1,7 +1,9 @@
-package com.procesos.colas.interfaces;
+package com.procesos.colas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.jms.annotation.EnableJms;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * Main application class for the Colas service
@@ -12,6 +14,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * - infrastructure: External concerns (database, messaging, etc)
  * - interfaces: Controllers, DTOs and external interfaces
  */
+@EnableJms
+@EnableScheduling
 @SpringBootApplication
 public class ColasApplication {
 

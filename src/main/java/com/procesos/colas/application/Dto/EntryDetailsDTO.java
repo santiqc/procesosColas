@@ -2,6 +2,10 @@ package com.procesos.colas.application.Dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.procesos.colas.application.Dto.alfrescoDTO.ContentDTO;
+import com.procesos.colas.application.Dto.alfrescoDTO.CreatedByUserDTO;
+import com.procesos.colas.application.Dto.alfrescoDTO.ModifiedByUserDTO;
+import com.procesos.colas.application.Dto.alfrescoDTO.PropertiesDTO;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 

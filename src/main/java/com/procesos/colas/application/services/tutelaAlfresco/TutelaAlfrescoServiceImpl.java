@@ -5,8 +5,11 @@ import com.procesos.colas.application.Dto.AlfrescoNode;
 import com.procesos.colas.application.Dto.tutelaAlfresco.TutelaAlfrescoDTO;
 import com.procesos.colas.application.Dto.tutelasDTO.ArchivosRadicacionDto;
 import com.procesos.colas.application.services.alfresco.AlfrescoManagementNodePort;
-import com.procesos.colas.domain.TutelaArchivo;
+import com.procesos.colas.domain.tutelas.TutelaArchivo;
 import com.procesos.colas.domain.alfesco.CreateNode;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
@@ -14,12 +17,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import static com.procesos.colas.application.Utils.UtilsHelper.convertDTOToMap;
+import static com.procesos.colas.application.Utils.UtilsHelper.convertDTOToMultiValueMap;
 
+@Data
 @Service
 public class TutelaAlfrescoServiceImpl implements TutelaAlfrescoService {
 

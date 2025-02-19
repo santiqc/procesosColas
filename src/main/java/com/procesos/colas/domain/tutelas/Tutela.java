@@ -3,12 +3,9 @@ package com.procesos.colas.domain.tutelas;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.prolinktic.sgdea.domain.model.autentificacion.OficinaModel;
-import com.prolinktic.sgdea.domain.model.autentificacion.Usuarios;
-import com.prolinktic.sgdea.domain.model.juzgado.Juzgado;
-import com.prolinktic.sgdea.infrastructure.persistence.postgres.entity.DatoSalida;
-import com.prolinktic.sgdea.infrastructure.persistence.postgres.entity.PublicacionActaEntity;
-import com.prolinktic.sgdea.infrastructure.persistence.postgres.entity.tutelas.TutelaUsuarioEscalado;
+import com.procesos.colas.domain.OficinaModel;
+import com.procesos.colas.domain.PublicacionActaEntity;
+import com.procesos.colas.domain.Usuarios;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -36,6 +33,7 @@ public class Tutela {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "idtutela")
     Long idTutela;
     @NotEmpty(message = "El campo canal de recepción es obligatorio")
     private String canal;

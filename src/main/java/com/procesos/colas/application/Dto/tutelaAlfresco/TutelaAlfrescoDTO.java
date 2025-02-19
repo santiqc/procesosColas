@@ -1,17 +1,18 @@
 package com.procesos.colas.application.Dto.tutelaAlfresco;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class TutelaAlfrescoDTO {
+@Builder
+public class TutelaAlfrescoDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private String radicado;
     private String tramite;
     private String pais;

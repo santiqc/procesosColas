@@ -1,7 +1,7 @@
 package com.procesos.colas.domain.tutelas;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.prolinktic.sgdea.domain.model.SeccionSubSeccion.SeccionSubSeccion;
+import com.procesos.colas.domain.SeccionSubSeccion;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
