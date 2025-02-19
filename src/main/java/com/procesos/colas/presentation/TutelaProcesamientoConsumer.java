@@ -20,7 +20,7 @@ public class TutelaProcesamientoConsumer {
     @Autowired
     private ObjectMapper objectMapper;
 
-    @JmsListener(destination = "tutela-procesamiento")
+
     @JmsListener(destination = "tutela-procesamiento")
     public void procesarTutela(Message message) {
         try {
